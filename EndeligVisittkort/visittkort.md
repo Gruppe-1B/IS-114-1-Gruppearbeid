@@ -1,6 +1,7 @@
 LENKE TIL *VK* DOMINYKAS|LENKE TIL *VK* BJØRNAR|LENKE TIL *VK* WILLIAM
 -------------------|-----------------------|--------------------------
 # Visittkort Sebastian
+[Min-Github](https://github.com/Sebastiannorolsen)
 
 ## Fødselsdato:
     dd.mm.yyyy
@@ -12,5 +13,3 @@ LENKE TIL *VK* DOMINYKAS|LENKE TIL *VK* BJØRNAR|LENKE TIL *VK* WILLIAM
     - [ ] Snakke
     - [ ] Presantere
     - [ ] en til ferdighet
-
-[Min-Github](https://github.com/Sebastiannorolsen)
