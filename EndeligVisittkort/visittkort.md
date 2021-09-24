@@ -13,3 +13,5 @@ LENKE TIL *VK* DOMINYKAS|LENKE TIL *VK* BJØRNAR|LENKE TIL *VK* WILLIAM
     - [ ] Snakke
     - [ ] Presantere
     - [ ] en til ferdighet
+
+![](Halla_damer.png)
