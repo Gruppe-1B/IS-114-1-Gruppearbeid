@@ -1,12 +1,13 @@
+```
 Visittkort
----
-Name: **Bastian Ege Tveit**
 
-From: Kristiansand S
+ Name: **Bastian Ege Tveit**
 
-Favoritt-fag: De fagene jeg likte best var **Gym**, **Historie** og **Naturfag**.
+   From: Kristiansand S
 
-Dette er min [GitHub profil](https://github.com/Munpun).
+   Favoritt-fag: De fagene jeg likte best var **Gym**, **Historie** og **Naturfag**.
 
----
+   Dette er min [GitHub profil](https://github.com/Munpun).
+```
+
 
