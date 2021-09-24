@@ -2,11 +2,15 @@ LENKE TIL *VK* DOMINYKAS|LENKE TIL *VK* BJØRNAR|LENKE TIL *VK* WILLIAM
 -------------------|-----------------------|--------------------------
 # Visittkort Sebastian
 
-## Telefonnummer:
-    xx xx xx xx
+## Fødselsdato:
+    dd.mm.yyyy
+## Hjemby:
+    Kristiansand
 ## Epost:
     someone@mail.com
 ## Ferdigheter:
     - [ ] Snakke
     - [ ] Presantere
     - [ ] en til ferdighet
+
+[Min-Github](https://github.com/Sebastiannorolsen)
