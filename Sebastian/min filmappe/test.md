@@ -1,15 +1,10 @@
-1. one 
-2. _two_
-3. **Bold**
-4. ___DICKPICKS___
-5. #Hey
-6. ##Hey
-7. ###Hey
-8. <h8> Hey
-9. <span style="color: wheat"> Hey </span>
-> ***SEBB*** <br>
-> <span style="background-color:white" >
-<span style="color: wheat"> Hey </span> <br>
-     <span style="color: red"> yo <br>
+---
+ Name: ***Sebastian Nor Olsen*** <br>
+ <span style="background-color:white" >
+<span style="color: #9572cd"> From: Kristiansand </span> <br>
+     <span style="color: #9572cd"> Tlf: ikke tenk på det <br>
     Pussy for life <br> </span>>
-> ![](Halla_damer.png) <br>
+![](Halla_damer.png) <br>
+ Dette er min [GitHub profil](https://github.com/sebastiannorolsen) <br>
+ Peace out <br>
+---
