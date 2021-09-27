@@ -1,0 +1,43 @@
+body {
+    background-color:lightskyblue;
+}
+
+a:link {
+    color:darkgreen;
+}
+
+a:visited {
+    color: darkgreen;
+}
+
+a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+#title {
+    text-align: center;
+}
+
+#image {
+    width: 500px;
+    height: 500px;
+}
+
+.container {
+    width: auto;
+}
+
+.text {
+    width: 300px;
+    display: inline-block;
+    padding-left: 15px;
+}
+
+.picture {
+    width: 500px;
+    height: 500px;
+    display: inline-block;
+    float: right;
+    padding-right: 15px;
+}
