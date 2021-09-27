@@ -1,0 +1,18 @@
+.links {
+    display: flex;
+    grid-column-gap : 10px;
+    
+  }
+  
+  .visittkort {
+      width : 200px;
+  }
+  .info {
+    background-color : grey;
+    padding-right : 2px;
+    padding-left : 3px;
+    padding-top : 1px;
+    padding-bottom : 1px;
+    border-radius : 2px;
+    
+  }
