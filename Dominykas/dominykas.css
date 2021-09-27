@@ -30,14 +30,13 @@ a:hover {
 
 .text {
     width: 300px;
-    display: inline-block;
+    float: left;
     padding-left: 15px;
 }
 
 .picture {
     width: 500px;
     height: 500px;
-    display: inline-block;
     float: right;
     padding-right: 15px;
 }
