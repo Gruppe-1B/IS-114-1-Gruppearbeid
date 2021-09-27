@@ -28,12 +28,11 @@ text-decoration: none;
 }
 .text {
     width: 300px;
-    display: inline-block;
+    float:left;
     padding-left: 300px;
 }
 .picture {
 width: 500px;
 height: 500px;
-display: inline-block;
 float: right;
 }
