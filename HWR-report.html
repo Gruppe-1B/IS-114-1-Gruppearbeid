@@ -12,102 +12,141 @@
 </head>
 <body>
 
-    <canvas id="report"></canvas>
+    <canvas id="report" width="900px" height="600px"></canvas>
 
   <script>
 
     var canvas = document.getElementById('report');
     var context = canvas.getContext('2d');
 
+    
+      // lage en for løkke som looper over medlemmene i gruppen slik at alle sine json resultater vises i kanvas med egne farger
+    const gruppemedlemmer = {
+        "William" : {
+            "JsonLink" : "20211005083132-4b4e14e32da0e584fecccf0a1b4abb8f.json",
+            "Farge" : "red"
+        },
+        "Bastian" : {
+            "JsonLink" : "20211005080105-9fa7c53f445c45ef3129c27fa660d265.json",
+            "Farge" : "blue"
+        },
+        "Bjørnar" : {
+            "JsonLink" : "20211005080230-10c80ec35082e9b76b96ca46b4833da2.json",
+            "Farge" : "brown"
+        },
+        "Dominik" : {
+            "JsonLink" : "20211005075834-3bc379eae8a777553c27fcc642790bfa.json",
+            "Farge" : "purple"
+        },
+        "Isak" : {
+            "JsonLink" : "20211005075810-7b5fee963643d2413e7c1c723d0ad497.json",
+            "Farge" : "green"
+        },
+        "Sebastian" : {
+            "JsonLink" : "20211005080302-7e99a766baf15bfa750ee81cc3beca2c.json",
+            "Farge" : "orange"
+        },
+    }
 
-    // lage en for løkke som looper over medlemmene i gruppen slik at alle sine json resultater vises i kanvas med egne farger
+    var canvas = document.getElementById('report');
+    var context = canvas.getContext('2d');
+    const yStart = 40
+    const xStart = 70
+    const xEnd = 730
+    const ratio = 6.6
 
-    fetch("https://bacit.info/hwr/", {
-      cache: 'no-cache', 
+    context.font = '14px serif';
+    context.fillText('CorA', yStart - 10, (yStart*1) + 5);
+    context.fillText('AorB', yStart - 10, (yStart*2) + 5);
+    context.fillText('DorI', yStart - 10, (yStart*3) + 5);
+    context.fillText('TorP', yStart - 10, (yStart*4) + 5);
+
+    context.beginPath();
+    context.moveTo(xStart, yStart);
+    context.lineTo(xEnd, yStart);
+
+    //context.beginPath();
+    context.moveTo(xStart, yStart*2);
+    context.lineTo(xEnd, yStart*2);
+
+    context.moveTo(xStart, yStart*3);
+    context.lineTo(xEnd, yStart*3);
+
+    context.moveTo(xStart, yStart*4);
+    context.lineTo(xEnd, yStart*4);
+    context.stroke();
+
+    Object.keys(gruppemedlemmer).map(name => {
+ 
+        jsonUrl = "https://bacit.info/hwr/" + gruppemedlemmer[name]["JsonLink"]
+        var i = Object.keys(gruppemedlemmer).indexOf(name);
+
+        fetch(jsonUrl)
+        .then(response => response.json())
+        .then(data => {
+            
+        context.fillStyle = "black"
+        context.fillText(name, xStart + xEnd + 20, (24*i) + 35)
+
+        var R1 = 5;
+        context.beginPath();
+        context.arc(xStart + xEnd, (24*i) + 30, R1, 0, 2*Math.PI, false);
+        context.fillStyle = gruppemedlemmer[name]["Farge"];
+        context.fill();
+        context.lineWidth = 1;
+        context.strokeStyle = "black";
+        context.stroke();
+
+
+        var X = xStart + (parseInt(data.CorA) * ratio);
+        var Y = yStart;
+        var R = 5;
+        context.beginPath();
+        context.arc(X, Y, R, 0, 2*Math.PI, false);
+        context.fillStyle = gruppemedlemmer[name]["Farge"];
+        context.fill();
+        context.lineWidth = 1;
+        context.strokeStyle = "black";
+        context.stroke();
+        //context.closePath();
+
+        var X = xStart + (parseInt(data.AorB) * ratio);
+        var Y = yStart*2;
+        var R = 5;
+        context.beginPath();
+        context.arc(X, Y, R, 0, 2*Math.PI, false);
+        context.fillStyle = gruppemedlemmer[name]["Farge"];
+        context.fill();
+        context.lineWidth = 1;
+        context.strokeStyle = "black";
+        context.stroke();
+
+
+        var X = xStart + (parseInt(data.DorI) * ratio);
+        var Y = yStart*3;
+        var R = 5;
+        context.beginPath();
+        context.arc(X, Y, R, 0, 2*Math.PI, false);
+        context.fillStyle = gruppemedlemmer[name]["Farge"];
+        context.fill();
+        context.lineWidth = 1;
+        context.strokeStyle = "black";
+        context.stroke();
+
+        var X = xStart + (parseInt(data.TorP) * ratio);
+        var Y = yStart*4;
+        var R = 5;
+        context.beginPath();
+        context.arc(X, Y, R, 0, 2*Math.PI, false);
+        context.fillStyle = gruppemedlemmer[name]["Farge"];
+        context.fill();
+        context.lineWidth = 1;
+        context.strokeStyle = "black";
+        context.stroke();
+
+        });
 
     })
-    .then(response => response.json())
-    .then(data => {
-
-      var canvas = document.getElementById('report');
-      var context = canvas.getContext('2d');
-
-      context.font = '14px serif';
-      context.fillText('CorA', 30, 25*1);
-      context.fillText('AorB', 30, 25*2);
-      context.fillText('DorI', 30, 25*3);
-      context.fillText('TorP', 30, 25*4);
-
-      context.beginPath();
-      context.moveTo(70,24);
-      context.lineTo(170,24);
-
-      //context.beginPath();
-      context.moveTo(70,24*2);
-      context.lineTo(170,24*2);
-
-      context.moveTo(70,24*3);
-      context.lineTo(170,24*3);
-
-      context.moveTo(70,24*4);
-      context.lineTo(170,24*4);
-      context.stroke();
-
-      const realData = {
-          "Navn": "william",
-          "CorA": "82",
-          "AorB": "21",
-          "DorI": "2",
-          "TorP": "12"
-      }
-
-      var X = 70 + parseInt(data.CorA);
-      var Y = 24;
-      var R = 5;
-      context.beginPath();
-      context.arc(X, Y, R, 0, 2*Math.PI, false);
-      context.fillStyle = "red";
-      context.fill();
-      context.lineWidth = 1;
-      context.strokeStyle = "black";
-      context.stroke();
-      //context.closePath();
-
-      var X = 70 + parseInt(data.AorB, 10);
-      var Y = 24*2;
-      var R = 5;
-      context.beginPath();
-      context.arc(X, Y, R, 0, 2*Math.PI, false);
-      context.fillStyle = "red";
-      context.fill();
-      context.lineWidth = 1;
-      context.strokeStyle = "black";
-      context.stroke();
-
-
-      var X = 70 + parseInt(data.DorI, 10);
-      var Y = 24*3;
-      var R = 5;
-      context.beginPath();
-      context.arc(X, Y, R, 0, 2*Math.PI, false);
-      context.fillStyle = "red";
-      context.fill();
-      context.lineWidth = 1;
-      context.strokeStyle = "black";
-      context.stroke();
-
-      var X = 70 + parseInt(data.TorP, 10);
-      var Y = 24*4;
-      var R = 5;
-      context.beginPath();
-      context.arc(X, Y, R, 0, 2*Math.PI, false);
-      context.fillStyle = "red";
-      context.fill();
-      context.lineWidth = 1;
-      context.strokeStyle = "black";
-      context.stroke();
-
-    });
 
 
   </script>
