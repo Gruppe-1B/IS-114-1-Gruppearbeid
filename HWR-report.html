@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Data fra JSON-fil</title>
+    <style>
+     
+    </style>
+
+</head>
+<body>
+
+    <canvas id="report"></canvas>
+
+  <script>
+
+    var canvas = document.getElementById('report');
+    var context = canvas.getContext('2d');
+
+
+    // lage en for løkke som looper over medlemmene i gruppen slik at alle sine json resultater vises i kanvas med egne farger
+
+    fetch("https://bacit.info/hwr/", {
+      cache: 'no-cache', 
+
+    })
+    .then(response => response.json())
+    .then(data => {
+
+      var canvas = document.getElementById('report');
+      var context = canvas.getContext('2d');
+
+      context.font = '14px serif';
+      context.fillText('CorA', 30, 25*1);
+      context.fillText('AorB', 30, 25*2);
+      context.fillText('DorI', 30, 25*3);
+      context.fillText('TorP', 30, 25*4);
+
+      context.beginPath();
+      context.moveTo(70,24);
+      context.lineTo(170,24);
+
+      //context.beginPath();
+      context.moveTo(70,24*2);
+      context.lineTo(170,24*2);
+
+      context.moveTo(70,24*3);
+      context.lineTo(170,24*3);
+
+      context.moveTo(70,24*4);
+      context.lineTo(170,24*4);
+      context.stroke();
+
+      const realData = {
+          "Navn": "william",
+          "CorA": "82",
+          "AorB": "21",
+          "DorI": "2",
+          "TorP": "12"
+      }
+
+      var X = 70 + parseInt(data.CorA);
+      var Y = 24;
+      var R = 5;
+      context.beginPath();
+      context.arc(X, Y, R, 0, 2*Math.PI, false);
+      context.fillStyle = "red";
+      context.fill();
+      context.lineWidth = 1;
+      context.strokeStyle = "black";
+      context.stroke();
+      //context.closePath();
+
+      var X = 70 + parseInt(data.AorB, 10);
+      var Y = 24*2;
+      var R = 5;
+      context.beginPath();
+      context.arc(X, Y, R, 0, 2*Math.PI, false);
+      context.fillStyle = "red";
+      context.fill();
+      context.lineWidth = 1;
+      context.strokeStyle = "black";
+      context.stroke();
+
+
+      var X = 70 + parseInt(data.DorI, 10);
+      var Y = 24*3;
+      var R = 5;
+      context.beginPath();
+      context.arc(X, Y, R, 0, 2*Math.PI, false);
+      context.fillStyle = "red";
+      context.fill();
+      context.lineWidth = 1;
+      context.strokeStyle = "black";
+      context.stroke();
+
+      var X = 70 + parseInt(data.TorP, 10);
+      var Y = 24*4;
+      var R = 5;
+      context.beginPath();
+      context.arc(X, Y, R, 0, 2*Math.PI, false);
+      context.fillStyle = "red";
+      context.fill();
+      context.lineWidth = 1;
+      context.strokeStyle = "black";
+      context.stroke();
+
+    });
+
+
+  </script>
+</body>
+</html>
