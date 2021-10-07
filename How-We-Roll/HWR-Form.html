@@ -205,8 +205,9 @@ body {
         const results = document.querySelector('.results pre');
         postData('https://bacit.info/', formJSON)
         .then(data => {
-           results.innerText = JSON.stringify(data, null, 2);
+           console.log(JSON.stringify(data, null, 2));
         });
+        
    }
 
    const form = document.querySelector('form');
