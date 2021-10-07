@@ -19,6 +19,11 @@ Alt dette ble planlagt og utført i kanbansiden "IS-114 Github, Kanban og Github
 
 ## **Begynnelsen av "How We Roll" oppgaven**
 
+### **Mockup/wireframe:**
+
+![Mockup](./Illustrasjoner/wireframe.jpg)
+
+
 *04.10.2021*
 
 
@@ -32,3 +37,34 @@ Dette innebærte at vi alle gikk inn på hvert vårt visittkort og flyttet innho
 
 * Her hadde vi noen konflikter og det tok litt lengre tid enn vi hadde forventet.
 
+*05.10.2021*
+
+* Vi begynnte dagen med å bli ferdig med å ordne noen problemer fra forrige dagen.
+
+* Deretter begynnte vi med å lage en skisse/wireframe til How We Roll oppgaven.
+
+* Da så vi gjennom Janis sin "How We Roll" repository for å lære oss hvordan å sende inn JSON data.
+
+* Etter dette begynnte vi å kode "how-we-roll.html"
+
+Dette gjorde vi ved å alle sitte i et rom og bidra med idéer til data vi skulle samle inn. Vi gjorde dette for å unngå merge-konflikter. 
+
+Vi laget først en skisse, og deretter kodet inn inputene inn i malen som lo i repositoryen "How We Roll".
+
+* Deretter begynnte vi med "hwr-report.html".
+
+Vi kodet denne ved å igjen sitte samlet og komme med idéer for koden. Én av problemen vi fant er at vi viste ikke hva filene het da vi sendet de inn, og vi brukte mye tid for å finne ut av det.
+
+Vi oppdaget at vi først måtte sende inn noen JSON filer fra how-we-roll.html for å begynne med visualiseringsarbeidet.
+
+Vi kunne ikke gjøre ferdig "hwr-report.html" pga. noen feilmeldinger som vi må spørre janis om.
+
+*06.10.2021*
+
+* Vi fikk veiledning av mentor og fikk kodet "hwr-report.html"
+
+Vi laget skisse og kodet dette ved å bruke det samme metodikken som før: Vi kodet denne ved å igjen sitte samlet og komme med idéer for koden.
+
+* Vi lo deretter inn lenker til både "hwr-report.html" og "hwr-form.html"
+
+* Etter dette var vi så å si ferdig, og én av oss ryddet opp i repositoriet kvelden etter gruppetimen. I morgen skal vi style sidene og finpusse produktet. 
