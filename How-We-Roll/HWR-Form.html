@@ -46,6 +46,19 @@ body {
     padding: 25px;
 }
 
+.HWRcard {
+    display: grid;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.HWRform {
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
 /* NAVIGATION BAR styling end */
 
     </style>
@@ -64,7 +77,9 @@ body {
                         </div>
                     </div>
                     <!-- NAVIGATION BAR-->
-  <form>
+  <div class="HWRcard">
+
+  <form class="HWRform">
 
     <!--
         medarbeidernes preferanser i forhold til personlige arbeidsvaner og spesifikke ferdigheter relatert til prosjektarbeid.
@@ -110,12 +125,8 @@ body {
 
       <button type="submit">Send inn</button>
   </form>
-
-  <!-- trenger vi denne? -->
-  <div class="results">
-      <h2>Form Data</h2>
-      <pre></pre>
   </div>
+
 
   <script>
 
