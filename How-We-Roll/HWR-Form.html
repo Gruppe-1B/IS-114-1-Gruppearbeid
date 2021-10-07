@@ -20,6 +20,19 @@ body {
     margin: 0 auto;
 }
 
+#navbar a:link {
+    color: white;
+    text-decoration: none;
+}
+
+#navbar a:visited {
+    color: white;
+}
+
+#navbar a:hover {
+    color: orange;
+}
+
 .navbarcontain {
     max-width: 1000px;
     margin: 0 auto;
@@ -68,10 +81,10 @@ body {
                     <!-- NAVIGATION BAR -->
                     <div id="navbar">
                         <div class="navbarcontain">
-                            <a id="titlename" href="./index.html"><span style="font-size:30px;">&#x21A9;</span> Homepage</a>
+                            <a id="titlename" href="../index.html"><span style="font-size:30px;">&#x21A9;</span> Homepage</a>
                             <div id="titlecontent">
-                                <a class="mediumspacingnavbar" href="./How-We-Roll/HWR-Form.html">How We Roll Form</a>
-                                <a class="mediumspacingnavbar" href="./How-We-Roll/HWR-report.html">How We Roll Report</a>
+                                <a class="mediumspacingnavbar" href="./HWR-Form.html">How We Roll Form</a>
+                                <a class="mediumspacingnavbar" href="./HWR-report.html">How We Roll Report</a>
             
                             </div>
                         </div>
@@ -120,6 +133,35 @@ body {
         <input type="range" id="TorP" name="TorP" value="50"/>
         <label for="TorP">Praktisk</label>
     </p>
+
+    <p>
+        <!-- Hvor på "VORT" skalaen er du? -->
+        <label for="VorT">Video</label>
+        <input type="range" id="VorT" name="VorT" value="50"/>
+        <label for="VorT">Tekst</label>
+    </p>
+
+    <p>
+        <!-- Hvor på "IorE" skalaen er du? -->
+        <label for="IorE">Introvert</label>
+        <input type="range" id="IorE" name="IorE" value="50"/>
+        <label for="IorE">Ekstrovert</label>
+    </p>
+
+    <p>
+        <!-- Hvor på "LorH" skalaen er du? -->
+        <label for="LorH"> Lav skriveferdighet</label>
+        <input type="range" id="LorH" name="LorH" value="50"/>
+        <label for="LorH">Høy skriveferdighet</label>
+    </p>
+
+<p>
+    <!-- Hvor på "BorG" skalaen er du? -->
+    <label for="BorG">Brains</label>
+    <input type="range" id="BorG" name="BorG" value="50"/>
+    <label for="BorG">Gains</label>
+</p>
+
 
         <!-- vi trenger kanskje flere preferanser i formet slik at vi kan flere elementer i reporten sin canvas -->
 
