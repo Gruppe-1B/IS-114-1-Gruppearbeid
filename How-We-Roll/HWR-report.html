@@ -78,7 +78,7 @@ body {
                     </div>
                     <!-- NAVIGATION BAR-->
 
-    <canvas id="report" width="1200px" height="600px"></canvas>
+    <canvas id="report" width="1400px" height="600px"></canvas>
 
   <script>
 
@@ -121,6 +121,8 @@ body {
     const xEnd = 905
     const ratio = 6.6
 
+
+
     context.font = '14px serif';
     // vi trenger å erstatte textene med en bedre beskrivelse enn 'CorA' etc
     // vi trenger også kanskje flere preferanser enn 4, så canvas ikke er så kort
@@ -132,6 +134,7 @@ body {
     context.fillText('Introvert eller ekstrovert', yStart - 10, (yStart*6) + 5);
     context.fillText('Lav eller høy skriveferdighet', yStart - 10, (yStart*7) + 5);
     context.fillText('Få eller mange pauser', yStart - 10, (yStart*8) + 5);
+
 
     context.beginPath();
     context.moveTo(xStart, yStart);
