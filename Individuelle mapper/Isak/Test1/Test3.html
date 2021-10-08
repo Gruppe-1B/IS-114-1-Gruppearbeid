@@ -1,0 +1,72 @@
+<style>
+    .container {
+        position: relative;
+        width: 200px;
+        height: 100px;
+        display: inline-block;
+        vertical-align: top;
+        border: solid;
+        text-align: center;
+        background-color: cornflowerblue;
+        margin: 10px;
+    }
+
+    .image {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 100%;
+        transition: .1s ease;
+
+    }
+
+    .container:hover .overlay {
+        opacity: 50%;
+        box-shadow: 8px 8px
+    }
+
+
+
+    .children {
+        width: 200px;
+        height: 100px;
+        display: inline-block;
+        vertical-align: top;
+        border: solid;
+        text-align: center;
+        background-color: cornflowerblue;
+        margin: 10px;
+    }
+
+    .children:hover {
+    background-colour: red;
+}
+</style>
+
+</head>
+<body>
+<link rel="stylesheet" href="Test3.css">
+<h2>Test</h2>
+<p>Hover over the box</p>
+
+<div class="container">
+    <p class="image">test </p>
+    <div class="overlay">
+    </div>
+</div>
+<div class="container">
+    This text is enclosed in a box.
+    <div class="overlay">
+    </div>
+</div>
+</body>

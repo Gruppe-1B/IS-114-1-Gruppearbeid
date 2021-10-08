@@ -61,6 +61,21 @@ body {
 
 /* NAVIGATION BAR styling end */
 
+.HWRcard {
+    display: grid;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.HWRform {
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+
     </style>
 
 </head>
@@ -77,7 +92,9 @@ body {
                         </div>
                     </div>
                     <!-- NAVIGATION BAR-->
-  <form>
+  <div class="HWRcard">
+
+  <form class="HWRform">
 
     <!--
         medarbeidernes preferanser i forhold til personlige arbeidsvaner og spesifikke ferdigheter relatert til prosjektarbeid.
@@ -126,17 +143,34 @@ body {
         <label for="VorT">Tekst</label>
     </p>
 
+    <p>
+        <!-- Hvor på "IorE" skalaen er du? -->
+        <label for="IorE">Introvert</label>
+        <input type="range" id="IorE" name="IorE" value="50"/>
+        <label for="IorE">Ekstrovert</label>
+    </p>
+
+    <p>
+        <!-- Hvor på "LorH" skalaen er du? -->
+        <label for="LorH"> Lav skriveferdighet</label>
+        <input type="range" id="LorH" name="LorH" value="50"/>
+        <label for="LorH">Høy skriveferdighet</label>
+    </p>
+
+<p>
+    <!-- Hvor på "BorG" skalaen er du? -->
+    <label for="ForM">Få pauser</label>
+    <input type="range" id="ForM" name="ForM" value="50"/>
+    <label for="ForM">Mange pauser</label>
+</p>
+
 
         <!-- vi trenger kanskje flere preferanser i formet slik at vi kan flere elementer i reporten sin canvas -->
 
       <button type="submit">Send inn</button>
   </form>
-
-  <!-- trenger vi denne? -->
-  <div class="results">
-      <h2>Form Data</h2>
-      <pre></pre>
   </div>
+
 
   <script>
 
@@ -144,7 +178,7 @@ body {
       const bear="20211005080230-10c80ec35082e9b76b96ca46b4833da2.json";
       const dom = "20211008081926-619df3b7b84660c8ec0aaabc8ffadc43.json";
       const isak= "20211005075810-7b5fee963643d2413e7c1c723d0ad497.json";
-      const william = "20211005083132-4b4e14e32da0e584fecccf0a1b4abb8f.json"
+      const william = "20211005083132-4b4e14e32da0e584fecccf0a1b4abb8f.json";
       const Sebastian="20211005080302-7e99a766baf15bfa750ee81cc3beca2c.json";
    // From https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch (seen 2021-09-27)
    // Example POST method implementation using fetch:
@@ -173,8 +207,9 @@ body {
         const results = document.querySelector('.results pre');
         postData('https://bacit.info/', formJSON)
         .then(data => {
-           results.innerText = JSON.stringify(data, null, 2);
+           console.log(JSON.stringify(data, null, 2));
         });
+        
    }
 
    const form = document.querySelector('form');
