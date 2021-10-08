@@ -147,6 +147,24 @@ body {
     context.lineTo(xEnd, yStart*4);
     context.stroke();
 
+    context.moveTo(xStart, yStart*5);
+    context.lineTo(xEnd, yStart*5);
+    context.stroke();
+
+    context.moveTo(xStart, yStart*6);
+    context.lineTo(xEnd, yStart*6);
+    context.stroke();
+
+    context.moveTo(xStart, yStart*7);
+    context.lineTo(xEnd, yStart*7);
+    context.stroke();
+
+    context.moveTo(xStart, yStart*8);
+    context.lineTo(xEnd, yStart*8);
+    context.stroke();
+
+
+
     Object.keys(gruppemedlemmer).map(name => {
  
         jsonUrl = "https://bacit.info/hwr/" + gruppemedlemmer[name]["JsonLink"]
@@ -206,6 +224,50 @@ body {
 
         var X = xStart + (parseInt(data.TorP) * ratio);
         var Y = yStart*4;
+        var R = 5;
+        context.beginPath();
+        context.arc(X, Y, R, 0, 2*Math.PI, false);
+        context.fillStyle = gruppemedlemmer[name]["Farge"];
+        context.fill();
+        context.lineWidth = 1;
+        context.strokeStyle = "black";
+        context.stroke();
+
+        var X = xStart + (parseInt(data.VorT) * ratio);
+        var Y = yStart*5;
+        var R = 5;
+        context.beginPath();
+        context.arc(X, Y, R, 0, 2*Math.PI, false);
+        context.fillStyle = gruppemedlemmer[name]["Farge"];
+        context.fill();
+        context.lineWidth = 1;
+        context.strokeStyle = "black";
+        context.stroke();
+
+        var X = xStart + (parseInt(data.IorE) * ratio);
+        var Y = yStart*6;
+        var R = 5;
+        context.beginPath();
+        context.arc(X, Y, R, 0, 2*Math.PI, false);
+        context.fillStyle = gruppemedlemmer[name]["Farge"];
+        context.fill();
+        context.lineWidth = 1;
+        context.strokeStyle = "black";
+        context.stroke();
+
+        var X = xStart + (parseInt(data.LorH) * ratio);
+        var Y = yStart*7;
+        var R = 5;
+        context.beginPath();
+        context.arc(X, Y, R, 0, 2*Math.PI, false);
+        context.fillStyle = gruppemedlemmer[name]["Farge"];
+        context.fill();
+        context.lineWidth = 1;
+        context.strokeStyle = "black";
+        context.stroke();
+
+        var X = xStart + (parseInt(data.ForM) * ratio);
+        var Y = yStart*8;
         var R = 5;
         context.beginPath();
         context.arc(X, Y, R, 0, 2*Math.PI, false);
