@@ -165,12 +165,16 @@ body {
 </p>
 
 
-        <!-- vi trenger kanskje flere preferanser i formet slik at vi kan flere elementer i reporten sin canvas -->
 
       <button type="submit">Send inn</button>
+      <div class="results">
+        <h2>Form Data</h2>
+        <pre></pre>
   </form>
   </div>
 
+
+    </div>
 
   <script>
 
@@ -207,7 +211,7 @@ body {
         const results = document.querySelector('.results pre');
         postData('https://bacit.info/', formJSON)
         .then(data => {
-           console.log(JSON.stringify(data, null, 2));
+            results.innerText = JSON.stringify(data, null, 2);
         });
         
    }
