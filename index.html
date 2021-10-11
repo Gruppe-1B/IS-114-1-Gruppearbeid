@@ -16,11 +16,16 @@ body {
     height: 100px;
     display: inline-block;
     vertical-align: top;
-    border: solid;
-    border-radius: 10px;
     text-align: center;
     background-color: cornflowerblue;
     margin: 10px;
+    border: solid;
+    border-radius: 10px;
+}
+.children:hover {
+    transition: .1s ease;
+    margin: auto;
+    box-shadow: 4px 4px 3px;
 }
 
 .container {
@@ -28,7 +33,29 @@ body {
     height: 250px;
     text-align: center;
 }
-
+.test {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(6, 16.6%);
+    grid-auto-rows: minmax(50%, auto);
+    text-align: center;
+}
+.visittkort {
+    color: black;
+    text-decoration: none;
+}
+.visittkort:hover {
+    color: black;
+    text-decoration: none;
+}
+.visittkort:visited {
+    color: black;
+    text-decoration: none;
+}
+.visittkort:link{
+    color:black;
+    text-decoration: none;
+}
 #center {
     text-align: center;
 }
@@ -123,36 +150,31 @@ a:hover {
 
         <h1 id="center">Hjemmeside 1B</h1>
         <h2 id="center">Lenker til visittkort</h2>
-        <div class="container">
-        <div class="children">
-            <p class="bold">Dominykas</p>
-            <a href="./EndeligVisittkort/Visittkort/dominykas.html">Visittkort</a>
+        <div class="test">
+            <a href="./EndeligVisittkort/Visittkort/dominykas.html" class="visittkort"> <div class="children">
+                <p class="bold"></br>Dominykas</p>
+            </div></a>
+            <a href="./EndeligVisittkort/Visittkort/william.html" class="visittkort"><div class="children">
+                <p class="bold"></br>William</p>
+            </div></a>
+            <a href="./EndeligVisittkort/Visittkort/Isak-visittkort.html" class="visittkort"><div class="children">
+                <p class="bold"></br>Isak</p>
+            </div></a>
+            <a href="./EndeligVisittkort/Visittkort/bear.html" class="visittkort"> <div class="children">
+                <p class="bold"></br>Bjørnar</p>
+            </div> </a>
+            <a href="./EndeligVisittkort/Visittkort/BastianVisittkort.html" class="visittkort"> <div class="children">
+                <p class="bold"></br>Bastian</p>
+            </div></a>
+            <a href="./EndeligVisittkort/Visittkort/sebastian.html" class="visittkort"> <div class="children">
+                <p class="bold"></br>Sebastian</p>
+            </div></a>
         </div>
-        <div class="children">
-            <p class="bold">William</p>
-            <a href="./EndeligVisittkort/Visittkort/william.html">Visittkort</a>
-        </div>
-        <div class="children">
-            <p class="bold">Isak</p>
-            <a href="./EndeligVisittkort/Visittkort/Isak-visittkort.html">Visittkort</a>
-        </div>
-        <div class="children">
-            <p class="bold">Bjørnar</p>
-            <a href="./EndeligVisittkort/Visittkort/bear.html">Visittkort</a>
-        </div>
-        <div class="children">
-            <p class="bold">Bastian</p>
-            <a href="./EndeligVisittkort/Visittkort/BastianVisittkort.html">Visittkort</a>
-        </div>
-        <div class="children">
-            <p class="bold">Sebastian</p>
-            <a href="./EndeligVisittkort/Visittkort/sebastian.html">Visittkort</a>
-        </div>
-        </div>
+
+            </div>
+    </div>
         <div class="container">
             <h2>Vårt Github Repository</h2>
             <a href="https://github.com/Gruppe-1B/IS-114-1-Gruppearbeid">Github Repository</a>
-        </div>
-    </div>
     </body>
 </html>

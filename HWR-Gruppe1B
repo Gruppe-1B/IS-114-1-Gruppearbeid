@@ -7,12 +7,19 @@
 Vi bestemte oss for å dele oppgaven i flere deler:
 
 * Først begynnte vi med å konfigurere github, git og intillij
+
 * Etterhvert ville William vise oss litt om hvordan python fungerte, dermed laget vi alle en enkel python skript.
+
 * Etter dette laget vi alle en sketch av visittkort på .md format.
+
 * Da gikk vi gjennom alle forslag på pull-requests siden og laget en endelig mal på visittkort.
+
 * Vi valgte å ha en "index" hvor det lo lenker til alle visittkortene, slik at vi kunne bruke github-pages siden senere om vi ville det.
+
 * Etter dette kodet vi hver vår visittkort på grupper med 2 folk slik at vi kunne hjelpe hverandre og forklare hvordan HTML og CSS fungerer.
+
 * Deretter kodet vi index.html på Zoom slik at alle kunne følge med og lære noe, og lo til styling med CSS.
+
 * Til slutt lastet vi alt opp i github-pages i en ny gren.
 
 Alt dette ble planlagt og utført i kanbansiden "IS-114 Github, Kanban og Github pages": [Link](https://github.com/Gruppe-1B/IS-114-1-Gruppearbeid/projects/4)
@@ -27,7 +34,7 @@ Alt dette ble planlagt og utført i kanbansiden "IS-114 Github, Kanban og Github
 *04.10.2021*
 
 
-* Vi begynnte dagen med å gjøre noen endringer av visittkortene for å møte kravene til oppgaven "How We Roll"
+* Vi begynnte dagen med å gjøre noen endringer av visittkortene for å  møte kravene til oppgaven "How We Roll"
 
 Dette innebærte at vi alle gikk inn på hvert vårt visittkort og flyttet innholdet av våre CSS filer inn i HTML filene.
 
@@ -37,7 +44,9 @@ Dette innebærte at vi alle gikk inn på hvert vårt visittkort og flyttet innho
 
 * Her hadde vi noen konflikter og det tok litt lengre tid enn vi hadde forventet.
 
+
 *05.10.2021*
+
 
 * Vi begynnte dagen med å bli ferdig med å ordne noen problemer fra forrige dagen.
 
@@ -59,24 +68,32 @@ Vi oppdaget at vi først måtte sende inn noen JSON filer fra how-we-roll.html f
 
 Vi kunne ikke gjøre ferdig "hwr-report.html" pga. noen feilmeldinger som vi må spørre janis om.
 
+
 *06.10.2021*
+
 
 * Vi fikk veiledning av mentor og fikk kodet "hwr-report.html"
 
-Vi laget skisse og kodet dette ved å bruke det samme metodikken som før: Vi kodet denne ved å igjen sitte samlet og komme med idéer for koden.
+Vi laget skisse og kodet dette ved å bruke det samme metodikken som før: 
+
+Vi kodet denne ved å igjen sitte samlet og komme med idéer for koden.
 
 * Vi lo deretter inn lenker til både "hwr-report.html" og "hwr-form.html"
 
 * Etter dette var vi så å si ferdig, og én av oss ryddet opp i repositoriet kvelden etter gruppetimen. I morgen skal vi style sidene og finpusse produktet. 
 
+
 *07.10.2021
 
-* Lo inn en navigasjonsbar for å gjøre det lettere å navigere sidene
 
-* Lagt til noen preferanser og ferdigheter i form i html filen. 
-
-* Stylet litt i sidene
+Lagt til noen preferanser og ferdigheter i form i html filen.
 
 
+08.10.2021
 
 
+*La til ekstra spørsmål i HWR-Formen
+
+*La disse inn i reporten
+
+*
