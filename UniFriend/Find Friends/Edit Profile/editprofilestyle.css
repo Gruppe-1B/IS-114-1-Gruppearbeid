@@ -4,16 +4,24 @@ body {
     text-align: center;
 }
 
+#textinput {
+    width: 350px;
+    height: 150px;
+}
+
 .uploadpic > input {
     display: none;
 }
 
-.file-input img
-{
+.file-input img {
     width:80px;
-    cursor: pointer;
 }
 
+.pointer {
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+}
 
 .button {
     background-color: midnightblue;
