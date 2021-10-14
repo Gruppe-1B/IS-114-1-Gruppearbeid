@@ -6,8 +6,9 @@ body {
 
 .button {
     background-color: midnightblue;
-    border-radius: 25px;
-    padding: 25px 125px;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin: 5px;
     color: white;
 }
 
@@ -16,12 +17,11 @@ body {
     color: black;
 }
 
-a:link {
-    color: white;
-    text-decoration: none;
-}
-
-a:visited {
-    color: white;
-    text-decoration: none;
+.request {
+    background-color: mediumslateblue;
+    border-color: black;
+    border-style: solid;
+    border-radius: 20px;
+    width: 400px;
+    margin: 10px auto;
 }

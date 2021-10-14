@@ -3,10 +3,36 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./editprofilestyle.css">
+    <link rel="stylesheet" href="./friendrequeststyle.css">
 </head>
 
 <body>
-    
+    <div id="requestList" class="requestList">
+
+    </div>
 </body>
+<script>
+    const friendrequest = ["Ola Nordmann", "Billy B.", "Filip", "Beatrice", "Julia", "Marcus"];
+    const requestHtml = document.getElementById("requestList");
+
+    function viewRequests() {
+        friendrequest.map((request) => {
+            var divTag = document.createElement("div");
+            divTag.className = "request";
+
+            var text = document.createTextNode("Friend request from: " + request);
+            
+            var button = document.createElement("button");
+            button.className = "button";
+            button.textContent = "View"
+            button.onclick = () => (console.log("Viewed " + request))
+
+            divTag.appendChild(text);
+            divTag.appendChild(button)
+            requestHtml.appendChild(divTag);
+        });
+    }
+    viewRequests()
+
+</script>
 </html>
