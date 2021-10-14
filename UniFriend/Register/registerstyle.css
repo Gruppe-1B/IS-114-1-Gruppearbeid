@@ -16,6 +16,37 @@ body {
     color: black;
 }
 
+.registerForm {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2, 1fr;
+    width: 400px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.regInput {
+    margin: 10px auto;
+    padding: 5px;
+    border-radius: 5px;
+    border-width: 3px;
+}
+
+.registerButton {
+    background-color: midnightblue;
+    border-radius: 10px;
+    padding: 10px 10px;
+    color: white;
+    margin: 10px auto;
+}
+
+.registerButton:hover {
+    background-color: mediumslateblue;
+    color: black;
+}
+
 a:link {
     color: white;
     text-decoration: none;
