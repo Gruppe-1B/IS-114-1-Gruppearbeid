@@ -11,6 +11,24 @@ body {
     color: white;
 }
 
+.container {
+    width: auto;
+}
+
+.container a {
+    margin: 50px;
+    display: inline-block;
+}
+
+
+
+
+
+.button:hover {
+    background-color: mediumslateblue;
+    color: black;
+}
+
 a:link {
     color: white;
     text-decoration: none;

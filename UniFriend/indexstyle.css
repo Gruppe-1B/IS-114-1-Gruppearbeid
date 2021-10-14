@@ -4,10 +4,15 @@ body {
 }
 
 .button {
-    background-color: midnightblue;
+    background-color: darkslateblue;
     border-radius: 25px;
     padding: 25px 125px;
     color: white;
+}
+
+.button:hover {
+    background-color: mediumslateblue;
+    color: black;
 }
 
 a:link {

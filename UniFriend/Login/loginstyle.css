@@ -11,6 +11,11 @@ body {
     color: white;
 }
 
+.button:hover {
+    background-color: mediumslateblue;
+    color: black;
+}
+
 a:link {
     color: white;
     text-decoration: none;
