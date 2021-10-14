@@ -1,0 +1,22 @@
+body {
+    background-color:steelblue;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.button {
+    background-color: midnightblue;
+    border-radius: 25px;
+    padding: 25px 125px;
+    color: white;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
