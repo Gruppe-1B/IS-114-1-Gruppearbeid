@@ -24,7 +24,14 @@ body {
     background-color: lightskyblue;
 }
 
-#imageaddfri {
+#nextandhomebutton {
+    cursor: pointer;
+    border-radius: 100;
+    border: none;
+    background-color: steelblue;
+}
+
+#images {
     width: 75px;
     height: 75px;
 }
@@ -49,4 +56,13 @@ a:link {
 a:visited {
     color: white;
     text-decoration: none;
+}
+
+.container {
+    width: auto;
+}
+
+.container button {
+    display: inline-block;
+    vertical-align: top;
 }
