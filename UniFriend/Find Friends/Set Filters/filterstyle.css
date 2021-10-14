@@ -25,3 +25,12 @@ a:visited {
     color: white;
     text-decoration: none;
 }
+
+.container {
+    width: auto;
+}
+
+.container a {
+    margin: 50px;
+    display: inline-block;
+}
