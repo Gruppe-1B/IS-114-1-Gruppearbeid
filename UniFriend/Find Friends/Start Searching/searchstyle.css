@@ -4,6 +4,31 @@ body {
     text-align: center;
 }
 
+#olanpic {
+    width: 250px;
+    height: 250px;
+}
+
+.container {
+    width: auto;
+}
+
+.container p {
+    display: inline-block;
+    margin-left: 35px;
+}
+
+#addfriendbutton {
+    cursor: pointer;
+    border-radius: 100%;
+    background-color: lightskyblue;
+}
+
+#imageaddfri {
+    width: 75px;
+    height: 75px;
+}
+
 .button {
     background-color: midnightblue;
     border-radius: 25px;
