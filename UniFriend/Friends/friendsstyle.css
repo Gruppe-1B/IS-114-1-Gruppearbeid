@@ -1,0 +1,40 @@
+body {
+    background-color:steelblue;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.button {
+    background-color: midnightblue;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin: 5px auto;
+    color: white;
+}
+
+.button:hover {
+    background-color: mediumslateblue;
+    color: black;
+}
+
+.searchBar {
+    padding: 10px;
+    margin: 15px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+}
+
+.friend {
+    display: grid;
+    background-color: mediumslateblue;
+    border-color: black;
+    border-style: solid;
+    border-radius: 20px;
+    width: 400px;
+    margin: 10px auto;
+}
+
+.friendText {
+    margin: 10px;
+}

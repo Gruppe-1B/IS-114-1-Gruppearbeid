@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./friendsstyle.css">
+</head>
+
+<body>
+    <h2>Friends</h2>
+    <div>
+        <input name="searchBar" class="searchBar" placeholder="Search friends"/>
+        <button class="button">Search</button>
+    </div>
+
+    <div id="friendList" class="friendList">
+
+    </div>
+
+    <div class="menyButtons">
+        <a href="../Main/main.html">
+            <button class="button">Back</button>
+        </a>
+    </div>
+
+</body>
+<script>
+    const friends = ["Ola Nordmann", "Billy B.", "Filip", "Beatrice", "Julia", "Marcus"];
+    const friendsHtml = document.getElementById("friendList");
+
+    function viewFriends() {
+        friends.map((friend) => {
+            var divTag = document.createElement("div");
+            divTag.className = "friend";
+
+            var text = document.createTextNode(friend);
+            text.className = "friendText";
+            
+            var button = document.createElement("button");
+            button.className = "button";
+            button.textContent = "Chat";
+            button.onclick = () => {
+                console.log("opened chat with " + friend);
+                window.location.href = "./chat.html" + "@" + friend;
+            }
+
+            divTag.appendChild(text);
+            divTag.appendChild(button);
+            friendsHtml.appendChild(divTag);
+        });
+    }
+    viewFriends()
+
+</script>
+</html>

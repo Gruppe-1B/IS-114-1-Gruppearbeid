@@ -28,8 +28,10 @@
             var button = document.createElement("button");
             button.className = "button";
             button.textContent = "View"
-            button.onclick = () => (console.log("Viewed " + request))
-
+            button.onclick = () => {
+                console.log("Viewed " + request);
+                window.location.href = "./profile.html" + "@" + request;
+            }
             divTag.appendChild(text);
             divTag.appendChild(button)
             requestHtml.appendChild(divTag);
