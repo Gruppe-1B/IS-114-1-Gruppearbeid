@@ -4,25 +4,25 @@ body {
     text-align: center;
 }
 
-.button {
-    background-color: midnightblue;
-    border-radius: 25px;
-    padding: 25px 125px;
-    color: white;
+
+.menyButtons {
+    display: grid;
 }
 
 .container {
+    display: grid;
     width: auto;
-}
-
-.container a {
     margin: 50px;
     display: inline-block;
 }
 
-
-
-
+.button {
+    background-color: midnightblue;
+    border-radius: 25px;
+    padding: 25px 125px;
+    margin: 15px;
+    color: white;
+}
 
 .button:hover {
     background-color: mediumslateblue;
