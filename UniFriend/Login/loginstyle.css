@@ -14,6 +14,7 @@ body {
     padding: 25px 125px;
     margin: 15px auto;
     color: white;
+    cursor: pointer;
 }
 
 .button:hover {

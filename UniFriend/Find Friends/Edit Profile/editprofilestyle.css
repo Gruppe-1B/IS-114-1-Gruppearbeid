@@ -28,6 +28,7 @@ body {
     border-radius: 25px;
     padding: 25px 125px;
     color: white;
+    cursor: pointer;
 }
 
 .button:hover {
