@@ -7,6 +7,9 @@
 </head>
 
 <body>
+    <h2>
+        Friend Requests
+    </h2>
     <div id="requestList" class="requestList">
 
     </div>
@@ -15,7 +18,7 @@
     </a>
 </body>
 <script>
-    const friendrequest = ["Ola Nordmann", "Billy B.", "Filip", "Beatrice", "Julia", "Marcus"];
+    const friendrequest = ["Derren Faust", "Billy B.", "Filip", "Beatrice", "Julia", "Marcus"];
     const requestHtml = document.getElementById("requestList");
 
     function viewRequests() {
@@ -30,7 +33,7 @@
             button.textContent = "View"
             button.onclick = () => {
                 console.log("Viewed " + request);
-                window.location.href = "./profile.html" + "@" + request;
+                window.location.href = "./newfriendreq.html";
             }
             divTag.appendChild(text);
             divTag.appendChild(button)
