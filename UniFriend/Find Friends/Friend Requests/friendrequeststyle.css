@@ -12,13 +12,14 @@ body {
     color: white;
 }
 
-.button button {
-    cursor: pointer;
-}
-
 .button:hover {
     background-color: mediumslateblue;
     color: black;
+    cursor: pointer;
+}
+
+a {
+    margin: 0 auto;
 }
 
 .request {
