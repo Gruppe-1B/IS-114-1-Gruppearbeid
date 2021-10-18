@@ -14,6 +14,9 @@ body {
     padding: 25px 125px;
     margin: 15px auto;
     color: white;
+}
+
+.button button {
     cursor: pointer;
 }
 

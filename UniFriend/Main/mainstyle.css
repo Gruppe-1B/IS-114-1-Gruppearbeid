@@ -22,6 +22,9 @@ body {
     padding: 25px 125px;
     margin: 15px;
     color: white;
+}
+
+.button button {
     cursor: pointer;
 }
 
