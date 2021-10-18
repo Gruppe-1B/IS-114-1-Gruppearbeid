@@ -23,16 +23,23 @@
         FIFA and other games.
     </p>
     <div class="container">
-        <a href="">
-            <button class="button">Accept<br>friend request</button>
-        </a>    
-        <a href="">
-            <button class="button">Decline<br> friend request</button>
-        </a>
+            <button class="button" onclick="acceptRequest()">Accept<br>friend request</button>
+            <button class="button" onclick="rejectRequest()">Decline<br> friend request</button>
     </div>
 
     <a href="./friendrequest.html">
         <button class="button">Back</button>
     </a>
+    <script>
+        function acceptRequest() {
+            alert("Friend request accepted!");
+            window.location.assign("./friendrequest.html");
+        }
+
+        function rejectRequest() {
+            alert("Friend request rejected.")
+            window.location.href = "friendrequest.html";
+        }
+    </script>
 </body>
 </html>
