@@ -1,0 +1,50 @@
+body {
+    background-color:steelblue;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.button {
+    background-color: midnightblue;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin: 5px;
+    color: white;
+}
+
+.button:hover {
+    background-color: mediumslateblue;
+    color: black;
+    cursor: pointer;
+}
+
+a {
+    margin: 0 auto;
+}
+
+.request {
+    background-color: mediumslateblue;
+    border-color: black;
+    border-style: solid;
+    border-radius: 20px;
+    width: 400px;
+    margin: 10px auto;
+}
+
+.container {
+    width: auto;
+}
+
+.container a {
+    margin: 25px;
+    display: inline-block;
+}
+
+.container a button {
+    width: 185px;
+}
+
+#derrfpic {
+    width: 250px;
+    height: 250px;
+}
