@@ -38,7 +38,6 @@ body {
 .messages {
     display: flex;
     flex-direction: column;
-    max-width: fit-content;
     row-gap: 5px;
 }
 
@@ -46,6 +45,14 @@ body {
     background-color: lightskyblue ;
     padding: 5px 10px;
     border-radius: 10px;
+    align-self: start;
+}
+
+.reply {
+    background-color: rgb(100, 144, 172) ;
+    padding: 5px 10px;
+    border-radius: 10px;
+    align-self: end;
 }
 
 .messageForm {

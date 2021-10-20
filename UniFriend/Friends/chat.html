@@ -19,8 +19,8 @@
     
         </div>
         <div class="messageForm">
-            <input class="messageInput">
-            <button class="messageButton">Send</button>
+            <input id="messageInput" class="messageInput">
+            <button class="messageButton" onclick="addMessage(document.getElementById('messageInput').value)">Send</button>
         </div>
 
     </div>
@@ -33,7 +33,7 @@
 
 </body>
 <script>
-    console.log(window.location.href.split("@"))
+
     const friend = {
         "name" : "Derren Faust",
         "messages" : ["Hei!", "Skal vi finne på noe?"]
@@ -56,6 +56,18 @@
         });
     }
     viewMessages()
+
+    function addMessage(message) {
+        var divTag = document.createElement("div");
+        divTag.className = "reply";
+
+        var text = document.createTextNode(message);
+
+        divTag.appendChild(text);
+        messages.appendChild(divTag);
+        document.getElementById("messageInput").value = "";
+
+    }
 
 </script>
 </html>
