@@ -20,19 +20,20 @@ body {
 
 .event {
     display: flex;
-    background-color: mediumslateblue;
+    background-color: white;
     border-color: black;
     border-style: solid;
     border-radius: 20px;
     width: 400px;
     margin: 10px auto;
     padding: 10px;
+    font-size: large;
 }
 
 .joinButton {
     background-color: midnightblue;
     border-radius: 20px;
-    padding: 10px 30px;
+    padding: 25px 40px;
     color: white;
     margin: 10px auto;
 }
@@ -42,6 +43,7 @@ body {
     color: black;
     cursor: pointer;
 }
+
 a {
     margin: 0 auto;
 }

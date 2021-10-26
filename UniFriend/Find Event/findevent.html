@@ -21,17 +21,20 @@
     eventDiv = document.getElementById("eventList");
 
     const eventList = {
-        "EventName1" : {
+        "Derren F." : {
+            "eventOwner" : "Derren F.",
             "eventDT" :  "event Date Time",
-            "eventLocation" : "event location",
-            "eventActivity" : "event activity",
-            "eventParticipants" : Math.floor(Math.random() * 10) + 1
+            "eventLocation" : "Marviksveien",
+            "eventActivity" : "D&D",
+            "eventParticipants" : Math.floor(Math.random() * 10) + 1,
+            "viewLink" : "./Events/DerrenF.html"
         },
-        "EventName2" : {
+        "Billy B." : {
             "eventDT" :  "event Date Time",
-            "eventLocation" : "event location",
-            "eventActivity" : "event activity",
-            "eventParticipants" : Math.floor(Math.random() * 10) + 1
+            "eventLocation" : "Odderøya",
+            "eventActivity" : "Football",
+            "eventParticipants" : Math.floor(Math.random() * 10) + 1,
+            "viewLink" : "./Events/BillyB.html"
         },
 
     };
@@ -41,15 +44,22 @@
             var currentEvent = document.createElement("div");
             var currentEventInfo = document.createElement("div");
 
-            currentEvent.className = "event"
+            currentEvent.className = "event";
+            currentEvent.addEventListener('click', function() {
+                location.href = eventList[EventName].viewLink;
+            }, false);
 
-            var eventName = document.createTextNode("Event Name: " + EventName)
+            var eventName = document.createTextNode(EventName)
+            eventName.fontsize = "40px";
             var eventLocation = document.createElement("div")
             eventLocation.appendChild(document.createTextNode("Location: " + eventList[EventName].eventLocation));
+            var eventLocationImg = document.createElement("img");
+            eventLocationImg.src = "GeoLocation.jpg";
+            eventLocationImg.style.width = "20px"
+
             var eventActivity = document.createElement("div")
             eventActivity.appendChild(document.createTextNode("Activity: " + eventList[EventName].eventActivity));
-            var eventParticipants = document.createElement("div")
-            eventParticipants.appendChild(document.createTextNode("Participants: " + eventList[EventName].eventParticipants));
+
 
             var joinButton = document.createElement("button");
             joinButton.textContent = "Join";
@@ -57,8 +67,8 @@
 
             currentEventInfo.appendChild(eventName);
             currentEventInfo.appendChild(eventLocation);
+            currentEventInfo.appendChild(eventLocationImg)
             currentEventInfo.appendChild(eventActivity);
-            currentEventInfo.appendChild(eventParticipants);
 
             currentEvent.appendChild(currentEventInfo);
             currentEvent.appendChild(joinButton);
