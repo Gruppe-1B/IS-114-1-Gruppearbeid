@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./findevent.css">
+</head>
+
+<body>
+
+    
+    <div id="eventActivity" class="Activity">
+        
+    </div>
+
+
+    <a href="../findevent.html">
+        <button class="button">Back</button>
+    </a>
+
+</body>
+<script>
+
+    const eventList = {
+        "Derren F." : {
+            "eventOwner" : "Derren F.",
+            "eventDT" :  "event Date Time",
+            "eventLocation" : "Marviksveien",
+            "eventActivity" : "D&D",
+            "eventParticipants" : Math.floor(Math.random() * 10) + 1
+        }
+    };
+
+    eventDiv = document.getElementById("eventActivity");
+
+</script>
+</html>

@@ -3,14 +3,14 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./friendsstyle.css">
+    <link rel="stylesheet" href="../indexstyle.css">
 </head>
 
 <body>
     <h2>Friends</h2>
     <div>
         <input name="searchBar" class="searchBar" placeholder="Search friends"/>
-        <button class="button">Search</button>
+        <button class="friendButton">Search</button>
     </div>
 
     <div id="friendList" class="friendList">
@@ -37,7 +37,7 @@
             text.className = "friendText";
             
             var button = document.createElement("button");
-            button.className = "button";
+            button.className = "friendButton";
             button.textContent = "Chat";
             button.onclick = () => {
                 console.log("opened chat with " + friend);

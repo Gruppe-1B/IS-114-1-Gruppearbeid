@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./friendrequeststyle.css">
+    <link rel="stylesheet" href="../../indexstyle.css">
 </head>
 
 <body>
@@ -29,7 +29,7 @@
             var text = document.createTextNode("Friend request from: " + request);
             
             var button = document.createElement("button");
-            button.className = "button";
+            button.className = "requestButton";
             button.textContent = "View"
             button.onclick = () => {
                 console.log("Viewed " + request);
