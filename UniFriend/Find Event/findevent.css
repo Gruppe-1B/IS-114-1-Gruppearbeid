@@ -1,0 +1,57 @@
+body {
+    background-color:steelblue;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.button {
+    background-color: midnightblue;
+    border-radius: 25px;
+    padding: 25px 125px;
+    margin: 15px auto;
+    color: white;
+}
+
+.button:hover {
+    background-color: mediumslateblue;
+    color: black;
+    cursor: pointer;
+}
+
+.event {
+    display: flex;
+    background-color: mediumslateblue;
+    border-color: black;
+    border-style: solid;
+    border-radius: 20px;
+    width: 400px;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.joinButton {
+    background-color: midnightblue;
+    border-radius: 20px;
+    padding: 10px 30px;
+    color: white;
+    margin: 10px auto;
+}
+
+.joinButton:hover {
+    background-color: mediumslateblue;
+    color: black;
+    cursor: pointer;
+}
+a {
+    margin: 0 auto;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
