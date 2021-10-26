@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./createevent.css">
+</head>
+
+<body>
+    <form class="eventForm">
+        <h2>Create Event</h2>
+        
+        <label>Event Name:</label>
+            <input class="createInput" id="eventName" name="firstName" type="text"/>
+        <label>Date and Time:</label>
+            <input class="createInput" id="eventDT" type="datetime-local"/>
+        <label>Location:</label>
+            <a href="https://www.google.hu/maps/" class="createInput" target="_blank"><img src="GeoLocation.jpg" width="40px" height="50px"></a>
+        <label>Activity:</label>
+            <select class="createInput" id="eventActivity" name="eventActivity">
+                <option value="Select Activity" selected>Select Activity</option>
+                <option value="Football">Football</option>
+                <option value="Basketball">Basketball</option>
+                <option value="Gaming" >Gaming</option>
+                <option value="Chess">Chess</option>
+                <option value="Baseball">Baseball</option>
+                <option value="Running">Running</option>
+                <option value="Hiking">Hiking</option>
+                <option value="Cycling">Cycling</option>
+            </select>
+
+        <label for="eventImage">
+            Image:
+        </label>
+        <label for="eventImage">
+            <img src="imageadd.png" width="80px" height="80px">
+        </label>
+        <input class="createInput" id="eventImage" hidden type="file"/>
+
+        
+        <button class="button" id="createButton" onclick="createActivity()">Create</button>
+
+    </form>
+
+    <a href="../Main/main.html">
+        <button class="button">Back</button>
+    </a>
+
+</body>
+<script>
+    function createActivity() {
+        console.log("created event with values:");
+        console.log(document.getElementById("eventName").value);
+        console.log(document.getElementById("eventDT").value);
+        console.log(document.getElementById("eventActivity").value);
+        console.log(document.getElementById("eventImage").value);
+    };
+</script>
+</html>

@@ -1,0 +1,64 @@
+body {
+    background-color:steelblue;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.button {
+    background-color: midnightblue;
+    border-radius: 25px;
+    padding: 25px 125px;
+    margin: 15px auto;
+    color: white;
+}
+
+.button:hover {
+    background-color: mediumslateblue;
+    color: black;
+    cursor: pointer;
+}
+
+a {
+    margin: 0 auto;
+}
+
+.eventForm {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2, 1fr;
+    width: 400px;
+    margin: 20px auto 0px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.createInput {
+    margin: 10px auto;
+    padding: 5px;
+    border-radius: 5px;
+    border-width: 3px;
+}
+
+.createButton {
+    background-color: midnightblue;
+    border-radius: 10px;
+    padding: 10px 10px;
+    color: white;
+    margin: 10px auto;
+}
+
+.createButton:hover {
+    background-color: mediumslateblue;
+    color: black;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
