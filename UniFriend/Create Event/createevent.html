@@ -49,6 +49,13 @@
 </body>
 <script>
     function createActivity() {
+        alert(
+            "created event with:" + 
+            "\neventName: " + document.getElementById("eventName").value + 
+            "\neventDT: " + document.getElementById("eventDT").value +
+            "\neventActivity: " + document.getElementById("eventActivity").value +
+            "\neventImage: " + document.getElementById("eventImage").value
+        );
         console.log("created event with values:");
         console.log(document.getElementById("eventName").value);
         console.log(document.getElementById("eventDT").value);
