@@ -27,6 +27,20 @@ body {
     cursor: pointer;
 }
 
+.smallbutton {
+    background-color: var(--BuColor);
+    border-radius: 25px;
+    padding: 15px 65px;
+    margin: 20px auto;
+    color: white;
+}
+
+.smallbutton:hover {
+    background-color: var(--BuHoColor);
+    color: black;
+    cursor: pointer;
+}
+
 a {
     margin: 0 auto;
 }
