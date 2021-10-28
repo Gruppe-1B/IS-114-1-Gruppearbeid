@@ -7,18 +7,23 @@
 </head>
 
 <body>
-    <h1>Enter your email<br>to reset password</h1><br><br>
-    <form>
+    <div class="header">
+        <h1 class="headerLink" onclick="home()">UniFriend</h1>
+        <a class="logOut" href="../index.html">
+            <h3>Log out</h3>
+        </a>
+    </div>
+    <h2>Enter your email<br>to reset password</h2>
+    <form class="loginForm">
         <label>Email:</label>
         <input class="regInput" name="email" type="email"/>
-        <br><br><br>
 
     </form>
     <br>
     <div class="menyButtons">
         <!--add link to demo of password reset here or something-->
         <a href="">
-            <button class="button">Reset password</button>
+            <button class="button" onclick="reset()">Reset password</button>
         </a>
 
         <a href="../login.html">
@@ -27,4 +32,13 @@
     </div>
 
 </body>
+<script>
+    function home() {
+        location.href = "index.html";
+    };
+
+    function reset() {
+        alert("Password reset link was sent via mail.");
+    }
+</script>
 </html>

@@ -7,6 +7,12 @@
 </head>
 
 <body>
+    <div class="header">
+        <h1 class="headerLink" onclick="home()">UniFriend</h1>
+        <a class="logOut" href="../index.html">
+            <h3>Log out</h3>
+        </a>
+    </div>
     <div class="chat">
         <div  class="chatName">
             <img width="60px" height="60px" class="profileImage" src="../Find Friends/Friend Requests/derrenfaust.jpg">
@@ -68,6 +74,10 @@
         document.getElementById("messageInput").value = "";
 
     }
+
+    function home() {
+            location.href = "../Main/main.html"
+        };
 
 </script>
 </html>

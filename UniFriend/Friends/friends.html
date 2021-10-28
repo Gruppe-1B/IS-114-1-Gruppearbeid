@@ -7,6 +7,12 @@
 </head>
 
 <body>
+    <div class="header">
+        <h1 class="headerLink" onclick="home()">UniFriend</h1>
+        <a class="logOut" href="../index.html">
+            <h3>Log out</h3>
+        </a>
+    </div>
     <h2>Friends</h2>
     <div>
         <input name="searchBar" class="searchBar" placeholder="Search friends"/>
@@ -49,6 +55,11 @@
             friendsHtml.appendChild(divTag);
         });
     }
+
+    function home() {
+            location.href = "../Main/main.html"
+        };
+
     viewFriends()
 
 </script>

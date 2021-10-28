@@ -7,8 +7,14 @@
 </head>
 
 <body>
+    <div class="header">
+        <h1 class="headerLink" onclick="home()">UniFriend</h1>
+        <a class="logOut" href="../../index.html">
+            <h3>Log out</h3>
+        </a>
+    </div>
+    
     <h1>Choose filters</h1>
-    <br>
     <p>Filter by interests:</p>
     <select>
         <option>None</option>
@@ -43,7 +49,10 @@
         function savechanges() {
             alert("Saved changes!");
         };
-        
+
+        function home() {
+            location.href = "../../Main/main.html"
+        };
     </script>
 
 </body>

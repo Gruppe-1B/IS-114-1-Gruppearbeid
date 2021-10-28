@@ -7,8 +7,13 @@
 </head>
 
 <body>
-    <br>
-    <p>Change profile picture:</p>
+    <div class="header">
+        <h1 class="headerLink" onclick="home()">UniFriend</h1>
+        <a class="logOut" href="../../index.html">
+            <h3>Log out</h3>
+        </a>
+    </div>
+    <h2>Change profile picture:</h2>
     <form>
     <div class="uploadpic">
         <label for="file-input">
@@ -50,6 +55,9 @@
             alert("Saved changes!");
         };
 
+        function home() {
+            location.href = "../../Main/main.html"
+        };
     </script>
 </body>
 </html>
