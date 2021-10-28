@@ -81,7 +81,7 @@ a:visited {
 }
 
 .registerButton {
-    background-color: --BuColor;
+    background-color: var(--BuColor);
     border-radius: 10px;
     padding: 10px 10px;
     color: white;
@@ -89,7 +89,7 @@ a:visited {
 }
 
 .registerButton:hover {
-    background-color: --BuHoColor;
+    background-color: var(--BuHoColor);
     color: black;
 }
 
@@ -120,7 +120,7 @@ a:visited {
 
 .friend {
     display: grid;
-    background-color: --BuHoColor;
+    background-color: var(--BuHoColor);
     border-color: black;
     border-style: solid;
     border-radius: 20px;
@@ -133,7 +133,7 @@ a:visited {
 }
 
 .friendButton {
-    background-color: --BuColor;
+    background-color: var(--BuColor);
     border-radius: 15px;
     padding: 10px 20px;
     margin: 5px auto;
@@ -141,7 +141,7 @@ a:visited {
 }
 
 .friendButton:hover {
-    background-color: --BuHoColor;
+    background-color: var(--BuHoColor);
     color: black;
     cursor: pointer;
 }
@@ -201,7 +201,7 @@ a:visited {
 }
 
 .messageButton {
-    background-color: --BuColor;
+    background-color: var(--BuColor);
     margin: 10px;
     padding: 5px 10px;
     border-radius: 15px;
@@ -246,11 +246,17 @@ a:visited {
 }
 
 .requestButton {
-    background-color: --BuColor;
+    background-color: var(--BuColor);
     border-radius: 15px;
     padding: 10px 30px;
     margin: 5px auto;
     color: white;
+}
+
+.requestButton:hover {
+    background-color: var(--BuHoColor);
+    color: black;
+    cursor: pointer;
 }
 
 
@@ -262,7 +268,7 @@ a:visited {
 }
 
 .friendRequestButton {
-    background-color: --BuColor;
+    background-color: var(--BuColor);
     border-radius: 15px;
     padding: 10px 20px;
     margin: 5px;
@@ -270,7 +276,7 @@ a:visited {
 }
 
 .friendRequestButton:hover {
-    background-color: --BuHoColor;
+    background-color: var(--BuHoColor);
     color: black;
     cursor: pointer;
 }
@@ -305,7 +311,7 @@ a:visited {
 }
 
 .createButton {
-    background-color: --BuColor;
+    background-color: var(--BuColor);
     border-radius: 10px;
     padding: 10px 10px;
     color: white;
@@ -313,7 +319,7 @@ a:visited {
 }
 
 .createButton:hover {
-    background-color: --BuHoColor;
+    background-color: var(--BuHoColor);
     color: black;
 }
 
@@ -333,7 +339,7 @@ a:visited {
 }
 
 .joinButton {
-    background-color: --BuColor;
+    background-color: var(--BuColor);
     border-radius: 20px;
     padding: 25px 40px;
     color: white;
@@ -341,7 +347,7 @@ a:visited {
 }
 
 .joinButton:hover {
-    background-color: --BuHoColor;
+    background-color: var(--BuHoColor);
     color: black;
     cursor: pointer;
 }
