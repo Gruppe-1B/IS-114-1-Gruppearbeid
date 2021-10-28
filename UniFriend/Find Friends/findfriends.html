@@ -7,8 +7,12 @@
 </head>
 
 <body>
-    <h1>UniFriend</h1>
-
+    <div class="header">
+        <h1 class="headerLink" onclick="home()">UniFriend</h1>
+        <a class="logOut" href="../index.html">
+            <h3>Log out</h3>
+        </a>
+    </div>
     <div class="menyButtons">
         <a href="./Edit Profile/editprofile.html">
             <button class="button">Edit Profile</button>
@@ -22,10 +26,24 @@
         <a href="./Start Searching/search.html">
             <button class="button">Start Searching</button>
         </a>
-        <a href="../Main/main.html">
-            <button class="button">Back</button>
+
+    </div>
+    <div class="footer">
+        <a class="backButton" href="../Main/main.html">
+            <img width="40px" src="../backArrow.png">
+        </a>
+        <a class="homeButton" href="../index.html">
+            <img width="40px" src="../homeIcon.png">
+        </a>
+        <a class="thirdButton" href="">
+            <img width="40px" src="../homeIcon.png">
         </a>
     </div>
-
 </body>
+
+<script>
+    function home(){
+        location.href = "../index.html"
+    }
+</script>
 </html>

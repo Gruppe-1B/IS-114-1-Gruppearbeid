@@ -85,10 +85,10 @@ a:visited {
     justify-content: center;
     background-color: var(--FooterColor);
     color: white;
-    padding: 5px;
 }
 
 .backButton {
+    padding: 5px;
 
 }
 
@@ -96,6 +96,9 @@ a:visited {
 
 }
 
+.logOut {
+    margin: 15px;
+}
 
 
 /** REGISTER **/
