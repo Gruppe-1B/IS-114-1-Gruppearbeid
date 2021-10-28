@@ -7,19 +7,26 @@
 </head>
 
 <body>
-    <h1 class="container">UniFriend</h1>
-    <br>
-    <br>
+    <div class="header">
+        <h1 class="headerLink" onclick="home()">UniFriend</h1>
+    </div>
     <div class="container">
         <a href="./Login/login.html">
             <button class="button">Log in</button>
         </a>
-        <br><br><br><br>
+        <br>
         <a href="./Register/register.html">
             <button class="button">Register</button>
         </a>
     </div>
+    <div class="footer">
+    </div>
 </body>
+<script>
+    function home() {
+        location.href = "index.html";
+    }
+</script>
 
 
 
