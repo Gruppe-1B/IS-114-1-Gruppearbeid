@@ -9,9 +9,7 @@
 <body>
     <div class="header">
         <h1 class="headerLink" onclick="home()">UniFriend</h1>
-        <a class="logOut" href="../../index.html">
-            <h3>Log out</h3>
-        </a>
+        <h3 class="logOut" onclick="logout()">Log out</h3>
     </div>
     <h2>
         Friend Requests
@@ -59,6 +57,11 @@
     function home() {
             location.href = "../../Main/main.html"
     };
+
+    function logout(){
+            location.href = "../index.html"
+    };
+    
     viewRequests()
 
 </script>
