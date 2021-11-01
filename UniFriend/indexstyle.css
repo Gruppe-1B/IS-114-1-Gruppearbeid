@@ -93,13 +93,16 @@ a:visited {
 }
 
 .homeButton {
-
+    padding: 5px;
 }
 
 .logOut {
-    margin: 15px;
+    padding: 5px;
 }
 
+.thirdbutton {
+    padding: 5px;
+}
 
 /** REGISTER **/
 .registerForm {
