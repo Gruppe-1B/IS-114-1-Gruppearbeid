@@ -315,6 +315,18 @@ a:visited {
     cursor: pointer;
 }
 
+.interestList {
+    display: grid;
+}
+
+.interest {
+    background-color: white;
+    padding: 2px;
+    margin: 1px auto;
+    border-radius: 5px;
+    width: min-content;
+}
+
 
 
 /** FRIEND REQUESTS **/

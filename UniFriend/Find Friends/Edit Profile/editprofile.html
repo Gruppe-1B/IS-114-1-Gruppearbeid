@@ -12,7 +12,6 @@
         <h3 class="logOut" onclick="logout()">Log out</h3>
     </div>
     <h2>Change profile picture:</h2>
-    <form>
     <div class="uploadpic">
         <label for="file-input">
             <img class="file-input" src="./imageadd.png">
@@ -25,7 +24,7 @@
     <p>Age <input type="date"></p>
     <p>Interests 
     <br>
-    <select>
+    <select id="interestSelection">
         <option>None</option>
         <option>Football</option>
         <option>Basketball</option>
@@ -35,10 +34,12 @@
         <option>Running</option>
         <option>Hiking</option>
         <option>Cycling</option>
-        </select>
+    </select>
+    <button onclick="addInterest()">Add</button>
+        <ul id="interestList" class="interestList">
+
+        </ul>
     </p>
-    </form>
-    <br>
     <div class="container">
         <a href="">
             <button onclick="savechanges()" class="button">Save</button>
@@ -56,6 +57,23 @@
         </a>
     </div>
     <script>
+        var interestsListed = ["None"]
+        function addInterest() {
+            var interest = document.getElementById("interestSelection").value;
+
+            if (interestsListed.includes(interest)) {
+                alert("Select another interest.")
+            }
+            else {
+                var interestDiv = document.createElement("div");
+                var text = document.createTextNode(interest + " ");
+                interestDiv.className = "interest";
+                interestDiv.appendChild(text)
+                document.getElementById("interestList").appendChild(interestDiv);
+                interestsListed.push(interest)
+            }
+
+        }
 
         function savechanges() {
             alert("Saved changes!");
