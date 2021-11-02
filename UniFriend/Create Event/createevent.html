@@ -41,10 +41,18 @@
         </label>
         <input class="createInput" id="eventImage" hidden type="file"/>
 
-        
-        <button class="button" id="createButton" onclick="createActivity()">Create</button>
 
     </form>
+    
+    <div id="loaderState">
+
+    </div>
+
+    <button class="button" id="createButton" onclick="createActivity()">Create</button>
+
+    <br>
+    <br>
+    <br>
 
     <div class="footer">
         <a class="backButton" href="../Main/main.html">
@@ -60,18 +68,30 @@
 </body>
 <script>
     function createActivity() {
-        alert(
-            "created event with:" + 
-            "\neventName: " + document.getElementById("eventName").value + 
-            "\neventDT: " + document.getElementById("eventDT").value +
-            "\neventActivity: " + document.getElementById("eventActivity").value +
-            "\neventImage: " + document.getElementById("eventImage").value
-        );
-        console.log("created event with values:");
-        console.log(document.getElementById("eventName").value);
-        console.log(document.getElementById("eventDT").value);
-        console.log(document.getElementById("eventActivity").value);
-        console.log(document.getElementById("eventImage").value);
+        var loaderDiv = document.getElementById("loaderState");
+        var loader = document.createElement("div");
+        loader.className = "loader";
+
+        loaderDiv.appendChild(loader)
+
+
+        setTimeout(function() {
+            alert(
+                "created event with:" + 
+                "\neventName: " + document.getElementById("eventName").value + 
+                "\neventDT: " + document.getElementById("eventDT").value +
+                "\neventActivity: " + document.getElementById("eventActivity").value +
+                "\neventImage: " + document.getElementById("eventImage").value
+            );
+            console.log("created event with values:");
+            console.log(document.getElementById("eventName").value);
+            console.log(document.getElementById("eventDT").value);
+            console.log(document.getElementById("eventActivity").value);
+            console.log(document.getElementById("eventImage").value);
+            location.href = "../Main/main.html";
+        }, 3000);
+
+
     };
 
     function home(){
