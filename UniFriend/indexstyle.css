@@ -470,3 +470,7 @@ a:visited {
     color: black;
     cursor: pointer;
 }
+
+.activity {
+    display: grid;
+}
