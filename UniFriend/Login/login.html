@@ -18,10 +18,13 @@
         <label>Password:</label>
         <input class="regInput" name="password" type="password"/>  
     </form>
+    
+    <div id="loaderState">
+
+    </div>
+
     <div class="menyButtons">
-        <a href="../Main/main.html">
-            <button class="button">Log in</button>
-        </a>
+        <button class="button" onclick="login()">Log in</button>
         <a href="./Forgot password/forgotpass.html">
             <button class="button">Forgot password</button>
         </a>
@@ -38,6 +41,19 @@
 
 </body>
 <script>
+    function login() {
+        var loaderDiv = document.getElementById("loaderState");
+        var loader = document.createElement("div");
+        loader.className = "loader";
+
+        loaderDiv.appendChild(loader)
+
+
+        setTimeout(function() {
+            location.href = "../Main/main.html";
+        }, 1000);
+
+    }
     function home(){
         location.href = "../index.html"
     }
