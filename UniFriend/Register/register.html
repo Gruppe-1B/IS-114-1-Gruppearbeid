@@ -27,9 +27,12 @@
         
     </form>
 
-        <a href="./registerconfirm.html">
-            <button class="button" id="registerButton" onclick="registerUser()" >Register</button>
-        </a>
+    <div id="loaderState">
+
+    </div>
+
+    <button class="button" id="registerButton" onclick="registerUser()" >Register</button>
+
     <div class="footer">
         <a class="backButton" href="../index.html">
             <img width="40px" src="../backArrow.png">
@@ -38,19 +41,31 @@
             <img width="40px" src="../homeIcon.png">
     </div>
 
+    
+
 </body>
 <script>
-
+    var loading = true
     function registerUser() {
         var firstName = document.getElementById("firstName").value;
         var lastName = document.getElementById("lastName").value;
         var email = document.getElementById("email").value;
         console.log("registered user", firstName, lastName, email);
 
-        alert("User was registered!");
+        var loaderDiv = document.getElementById("loaderState");
+        var loader = document.createElement("div");
+        loader.className = "loader";
 
-        location.href = "../Main/main.html";
+        loaderDiv.appendChild(loader)
+
+
+        setTimeout(function() {
+            alert("User was registered!");
+            location.href = "registerconfirm.html";
+        }, 2000);
+
     }
+
 
     function home(){
         location.href = "../index.html"
